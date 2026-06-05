@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
-<head><meta charset="UTF-8"><title>Research Reports</title></head>
-<body><h1>Research Reports</h1><p>Prueba de publicacion correcta.</p></body>
+<head>
+    <meta charset="UTF-8">
+    <title>Test de Hermes</title>
+</head>
+<body style="font-family: sans-serif; background: #0a0a0a; color: #e0e0e0; padding: 40px; margin: 0;">
+    <h1 style="color: #00d4ff; margin-bottom: 8px;">Test de Hermes</h1>
+    <p id="fecha" style="color: #888; font-size: 14px;"></p>
+    <script>
+        document.getElementById('fecha').textContent = new Date().toLocaleString('es-ES', {
+            timeZone: 'Europe/Madrid',
+            weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
+            hour: '2-digit', minute: '2-digit', second: '2-digit'
+        });
+    </script>
+</body>
 </html>
